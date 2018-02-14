@@ -27,7 +27,7 @@ can do everything: manage inventory, reserve products, etc.
 * User browses Products
     - Products that are already reserved for the same date range are be dimmed, to
         indicate unavailability
-    - Products
+    - The product list may be restricted to a single Category
 * User reserves Product for Event
 * User sends reservation request
 * User browses list of Events

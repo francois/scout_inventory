@@ -10,7 +10,7 @@ can do everything: manage inventory, reserve products, etc.
 
 ## Main Use Cases
 
-* Admin creates Group
+* Admin registers Group
 * Admin registers first User in Group
     - Email, password, name
 * User adds products to inventory

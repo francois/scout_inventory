@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  user: <%= ENV["USER"] %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: scout_inventory_development
+
+test:
+  <<: *default
+  database: scout_inventory_test
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>

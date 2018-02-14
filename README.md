@@ -5,7 +5,7 @@ This application enables a Scout Group to manage their inventory. Scout Troop Ma
 letting humans take care of the rest. Inventory Masters are responsible for managing the actual
 data-entry of the inventory: pictures, description, etc.
 
-Security is minimal: beyond being associated with a single Scout Group, all User in the same Group
+Security is minimal: beyond being associated with a single Scout Group, all Users in the same Group
 can do everything: manage inventory, reserve products, etc.
 
 ## Main Use Cases

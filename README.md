@@ -25,7 +25,7 @@ can do everything: manage inventory, reserve products, etc.
     - Can't remove self
 * User registers Event
 * User browses Products
-    - Products that are already reserved for the same date range are be dimmed, to
+    - Products that are already reserved for the same date range are dimmed, to
         indicate unavailability
     - The product list may be restricted to a single Category
 * User reserves Product for Event

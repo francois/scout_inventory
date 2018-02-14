@@ -10,24 +10,28 @@ can do everything: manage inventory, reserve products, etc.
 
 ## Main Use Cases
 
-* Admin registers Group
-* Admin registers first User in Group
-    - Email, password, name
 * User adds products to inventory
     - Products may have 0..N pictures
     - Products have a single description
-    - Products may have 0..N notes from previous Events
     - Products belong to 0..N categories
+    - Products may have 0..N notes from previous Events
 * User adds User to Group
     - Email, password, name
 * User removes User from Group
     - Last user can't leave
     - Can't remove self
 * User registers Event
+    - Events have a name/description
+    - Events start and end on specific dates
 * User browses Products
     - Products that are already reserved for the same date range are dimmed, to
         indicate unavailability
-    - The product list may be restricted to a single Category
+    - The product list may be filtered to a single Category
+    - The product list may be filtered to products whose name match a substring
+        searching for: "ten" return "4x10 winter tent" and "gluten free rope"
+* User can view a single Product's history
+    - Displays a history of this product's rentals
+    - Displays any notes associated with each rental
 * User reserves Product for Event
     - Actual dates for reservation are -1 .. +1, meaning if the event is from
         Thu to Sat, the actual reservation will be Wed to Sun
@@ -46,10 +50,12 @@ can do everything: manage inventory, reserve products, etc.
     - Indicates future repairs or things that may have happened to the Product
     - It may be easier to display the reservation list and have a Notes field
         next to each event
-* User can view a single Product's history
-    - Displays the number of times this product was rented
-    - Displays any notes associated with each rental
-* Admin registers product Category
+* User adds a Note on a Product
+    - The Note is not tied to any specific Event
+* Admin adds Product Category
+* Admin adds Group
+* Admin registers first User in Group
+    - Email, password, name
 
 ## Product Examples
 

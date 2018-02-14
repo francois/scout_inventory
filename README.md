@@ -29,6 +29,8 @@ can do everything: manage inventory, reserve products, etc.
         indicate unavailability
     - The product list may be restricted to a single Category
 * User reserves Product for Event
+    - Actual dates for reservation are -1 .. +1, meaning if the event is from
+        Thu to Sat, the actual reservation will be Wed to Sun
 * User sends reservation request
     - The reservation request is sent to one or more people
     - The reservation request email has a link to see the list of products

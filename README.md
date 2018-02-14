@@ -30,7 +30,14 @@ can do everything: manage inventory, reserve products, etc.
     - The product list may be restricted to a single Category
 * User reserves Product for Event
 * User sends reservation request
+    - The reservation request is sent to one or more people
+    - The reservation request email has a link to see the list of products
+    - The reservation request email can be printed as a check list for easy
+        on-the-ground marking and note taking
+    - The reservation request contains a short alpha-numeric string that identifies
+        it and can be used to return to the same list later (think bit.ly short code)
 * User browses list of Events
+    - List displays events that have closed in the past two weeks and all future events
 * User prints a reservation list for a specific Event
     - Each product on the list has a checkbox, for easy bookkeeping while on-site
 * User adds a Note on a Product in an Event
@@ -38,6 +45,18 @@ can do everything: manage inventory, reserve products, etc.
     - It may be easier to display the reservation list and have a Notes field
         next to each event
 * Admin registers product Category
+
+## Product Examples
+
+Scout Groups should record every possible products that a Scout Troop can take with them when they
+go on an expedition:
+
+* Flags
+* Tents
+* Kitchen ustensils
+* Propane tanks
+* Projectors
+* etc.
 
 ## Technical Notes
 

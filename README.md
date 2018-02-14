@@ -37,6 +37,7 @@ can do everything: manage inventory, reserve products, etc.
     - Indicates future repairs or things that may have happened to the Product
     - It may be easier to display the reservation list and have a Notes field
         next to each event
+* Admin registers product Category
 
 ## Technical Notes
 

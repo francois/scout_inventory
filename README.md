@@ -58,6 +58,6 @@ go on an expedition:
 * Projectors
 * etc.
 
-## Technical Notes
+# Technical Notes
 
 This is a Ruby on Rails 5.2 application, running on Ruby 2.5 and using PostgreSQL 10.x.

@@ -1,24 +1,39 @@
-# README
+# Scout Inventory
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application enables a Scout Group to manage their inventory. Scout Troop Masters create events
+(camps) and reserve material. The application is responsible for flagging overlapping lendings and
+letting humans take care of the rest. Inventory Masters are responsible for managing the actual
+data-entry of the inventory: pictures, description, etc.
 
-Things you may want to cover:
+Security is minimal: beyond being associated with a single Scout Group, all User in the same Group
+can do everything: manage inventory, reserve products, etc.
 
-* Ruby version
+## Main Use Cases
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Admin creates Group
+* Admin registers first User in Group
+    - Email, password, name
+* User adds products to inventory
+    - Products may have 0..N pictures
+    - Products have a single description
+    - Products may have 0..N notes from previous Events
+    - Products belong to 0..N categories
+* User adds User to Group
+    - Email, password, name
+* User removes User from Group
+    - Last user can't leave
+    - Can't remove self
+* User registers Event
+* User browses Products
+    - Products that are already reserved for the same date range are be dimmed, to
+        indicate unavailability
+    - Products
+* User reserves Product for Event
+* User sends reservation request
+* User browses list of Events
+* User prints a reservation list for a specific Event
+    - Each product on the list has a checkbox, for easy bookkeeping while on-site
+* User adds a Note on a Product in an Event
+    - Indicates future repairs or things that may have happened to the Product
+    - It may be easier to display the reservation list and have a Notes field
+        next to each event
